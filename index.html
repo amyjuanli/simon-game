@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Juan Li">
+    <link rel="stylesheet" href="style.css">
+    <title>Simon Game</title>
+</head>
+
+<body>
+    <!--- simon svg -->
+    <?xml version="1.0" encoding="utf-8"?>
+    <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <svg version="1.1" id="simon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+        y="0px" width="1200" height="100vh" viewBox= "0 50 200 120" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+
+        <path id="outer-circle" class="st0" d="M111.4,71.8h-0.3c-21.8,0-39.4,17.6-39.4,39.4v0.3c0.2,21.6,17.7,39.1,39.4,39.1h0.3
+	c21.5-0.1,39-17.6,39.2-39.1v-0.3C150.6,89.5,133.1,72,111.4,71.8z M111.4,145.3c-19.2,0-34.8-15.1-34.8-33.8
+	c0-18.7,15.6-33.8,34.8-33.8c19.2,0,34.8,15.1,34.8,33.8C146.2,130.2,130.6,145.3,111.4,145.3z" />
+        <g id='fourColors' onclick="userClick(event)">
+            <path id="green-btn" fill="green" d="M111.4,77.7v33.8H76.7C76.7,92.9,92.2,77.7,111.4,77.7z" />
+            <path id="red-btn" fill="red" d="M146.2,111.5h-34.8V77.7C130.6,77.7,146.2,92.9,146.2,111.5z" />
+            <path id="blue-btn" fill="blue" d="M146.2,111.5c0,18.7-15.6,33.8-34.8,33.8v-33.8H146.2z" />
+            <path id="yellow-btn" fill="yellow" d="M111.4,111.5v33.8c-19.2,0-34.8-15.1-34.8-33.8H111.4z" />
+        </g>
+        <circle id="inner-circle" class="st5" cx="111.4" cy="111.5" r="15.9" />
+        <text id="Simon-text" transform="matrix(1.227 0 0 1 102.6734 104.0426)" class="st6 st7 st8">Simon</text>
+        <!--  capture start button -->
+        <g id="start">
+            <radialGradient id="start_1_" cx="111.425" cy="112.0625" r="1.2775" gradientUnits="userSpaceOnUse">
+                <stop offset="0.5744" style="stop-color:#000000;stop-opacity:0" />
+                <stop offset="0.7977" style="stop-color:#000000;stop-opacity:0.6512" />
+                <stop offset="1" style="stop-color:#000000;stop-opacity:0.95" />
+            </radialGradient>
+            <circle class="st9" cx="111.4" cy="112.1" r="1.2" />
+        </g>
+        <!-- strict button -->
+        <g id="strict">
+            <radialGradient id="strict_1_" cx="119.5084" cy="112.0625" r="1.2777" gradientUnits="userSpaceOnUse">
+                <stop offset="0.5744" style="stop-color:#000000;stop-opacity:0" />
+                <stop offset="0.7977" style="stop-color:#000000;stop-opacity:0.6512" />
+                <stop offset="1" style="stop-color:#000000;stop-opacity:0.95" />
+            </radialGradient>
+            <circle id="strict" class="st10" cx="119.5" cy="112.1" r="1.2" />
+        </g>
+        <circle id="indicator" class="st11" cx="119.5" cy="110.2" r="0.3" />
+        <rect id="off-btn" x="107.7" y="118.9" fill="#486DB4" width="3.9" height="2.6" />
+        <rect id="on-btn" x="111.3" y="118.9" fill="#0A0B0D" width="3.9" height="2.6" />
+        <path id="count-background" class="st14" d="M104.1,114.1h-3.8c-1.1,0-2.1-0.9-2.1-2.1l0,0c0-1.1,0.9-2.1,2.1-2.1h3.8
+	c1.1,0,2.1,0.9,2.1,2.1l0,0C106.1,113.2,105.2,114.1,104.1,114.1z" />
+        <text id="count-output" transform="matrix(1.3208 0 0 1 100 113.293)" class="st15 st7 st16">--</text>
+        <text id="count-text" transform="matrix(1.1067 0 0 1 98.917 116.0303)" class="st17 st7 st18">COUNT</text>
+        <text id="strict-text" transform="matrix(1.1067 0 0 1 117.4727 116.0303)" class="st17 st7 st18">STRICT</text>
+        <text id="off-text" transform="matrix(1.1067 0 0 1 103.4235 120.8303)" class="st17 st7 st18">OFF</text>
+        <text id="on-text" transform="matrix(1.1067 0 0 1 116.667 120.8305)" class="st17 st7 st18">ON</text>
+        <text id="start-text" transform="matrix(1.1067 0 0 1 109.594 116.0303)" class="st17 st7 st18">START</text>
+    </svg>
+    <script src="main.js"></script>
+</body>

@@ -1,0 +1,56 @@
+body {
+  background-color: #e6e6e6;
+  margin: 0;
+  padding: 0;
+}
+
+#simon {
+  padding-top: 0;
+}
+
+
+/* color swith for off and on button*/
+.onColor {
+  fill:#486DB4;
+}
+.offColor {
+/*   fill:#0A0B0D; */
+  fill: black;
+}
+
+
+/* svg styles */
+	.st0{fill:#353131;stroke:#000000;stroke-miterlimit:10;}
+	.st1{stroke:#000000;stroke-miterlimit:10;}
+	.st2{stroke:#000000;stroke-miterlimit:10;}
+	.st3{stroke:#000000;stroke-miterlimit:10;}
+	.st4{stroke:#000000;stroke-miterlimit:10;}
+	.st5{fill:#F8F4F4;stroke:#000000;stroke-width:6.000000e-02;stroke-miterlimit:10;}
+	.st6{stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+	.st7{font-family:'MyriadPro-Regular';}
+	.st8{font-size:5.785px;}
+	.st9{fill:#CE2031;stroke:url(#start_1_);stroke-width:0.25;stroke-miterlimit:10;}
+	.st10{fill:#F9ED27;stroke:url(#strict_1_);stroke-width:0.25;stroke-miterlimit:10;}
+	.st11{fill:#CE2031;stroke:#2B2929;stroke-width:6.000000e-02;stroke-miterlimit:10;}
+/* 	.st12{fill:#486DB4;} */
+/* 	.st13{fill:#0A0B0D;} */
+	.st14{fill:#252825;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+	.st15{fill:#D01F33;}
+	.st16{font-size:0.25em;}
+	.st17{stroke:#000000;stroke-width:2.000000e-02;stroke-miterlimit:10;}
+	.st18{font-size:1.6288px;}
+
+
+/* cursor changes to pointer */
+#off-btn,
+#on-btn,
+#start,
+#strict,
+#green-btn,
+#yellow-btn,
+#red-btn,
+#blue-btn:hover {
+  cursor: pointer;
+}
+
+
